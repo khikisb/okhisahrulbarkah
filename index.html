@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="id">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Okhi Sahrul Barkah">
+    <meta name="description" content="Portofolio Okhi Sahrul Barkah - Fullstack Developer, UI/UX Designer, Graphic Designer">
+    <!-- ======== Page title ============ -->
+    <title>Okhi Sahrul Barkah | Portofolio</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="O" class="letters-loading">O</span>
+                <span data-text-preloader="S" class="letters-loading">S</span>
+                <span data-text-preloader="B" class="letters-loading">B</span>
+            </div>
+            <p class="text-center" data-i18n="preloader.loading">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Theme Switcher (hidden on the side; hover to open) -->
+    <div class="theme-panel" id="theme-panel" aria-label="Theme switcher">
+        <button class="theme-panel-handle" id="theme-handle" type="button" aria-label="Theme">
+            <i class="fa-solid fa-palette"></i>
+        </button>
+        <div class="theme-panel-body">
+            <div class="theme-panel-title" data-i18n="theme.title">Tampilan</div>
+
+            <div class="theme-row">
+                <div class="theme-label" data-i18n="theme.bg">Background</div>
+                <div class="theme-swatches" data-type="bg">
+                    
+                    <button type="button" class="swatch" data-color="#0B0F1A" aria-label="Background 1"></button>
+                    <button type="button" class="swatch" data-color="#1E3A8A" aria-label="Background 2"></button>
+                    <button type="button" class="swatch" data-color="#065F46" aria-label="Background 3"></button>
+                    <button type="button" class="swatch" data-color="#7C2D12" aria-label="Background 4"></button>
+                    <button type="button" class="swatch" data-color="#7F1D1D" aria-label="Background 5"></button>
+                    <button type="button" class="swatch" data-color="#3B0764" aria-label="Background 6"></button>
+
+                </div>
+            </div>
+
+            <div class="theme-row">
+                <div class="theme-label" data-i18n="theme.text">Warna tulisan</div>
+                <div class="theme-swatches" data-type="text">
+                    
+                    <button type="button" class="swatch" data-color="#FFFFFF" aria-label="Text 1"></button>
+                    <button type="button" class="swatch" data-color="#E5E7EB" aria-label="Text 2"></button>
+                    <button type="button" class="swatch" data-color="#0B0F1A" aria-label="Text 3"></button>
+                    <button type="button" class="swatch" data-color="#111827" aria-label="Text 4"></button>
+                    <button type="button" class="swatch" data-color="#BFF747" aria-label="Text 5"></button>
+                    <button type="button" class="swatch" data-color="#FBBF24" aria-label="Text 6"></button>
+
+                </div>
+            </div>
+
+            <div class="theme-row theme-row-actions">
+                <button type="button" class="theme-reset" id="theme-reset" data-i18n="theme.reset">Reset</button>
+                <span class="theme-warning" id="theme-warning" aria-live="polite"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/osb.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block" data-i18n="hero.desc">Fullstack Developer, UI/UX Designer, dan Graphic Designer. Terbiasa membangun solusi digital end-to-end: dari riset & desain antarmuka hingga implementasi frontend dan backend.</p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Perumahan Golden Berry, Menganti, Gresik, 61174</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:okhisahrulbarkah@gmail.com"><span
+                                            class="mailto:okhisahrulbarkah@gmail.com">okhisahrulbarkah@gmail.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Available for freelance & collaboration</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+6285815247008">+62 858-1524-7008</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4 text-center">
+                            <a href="#contact" class="theme-btn"><span data-i18n="nav.contact">Kontak</span> <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://linkedin.com/in/okhisahrulbarkah" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/osb.svg" alt="logo-img">
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/img/logo/osb.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="#home" class="border-none"><span data-i18n="nav.home">Beranda</span></a></li>
+                                    <li><a href="#about"><span data-i18n="nav.about">Tentang</span></a></li>
+                                    <li><a href="#services"><span data-i18n="nav.services">Layanan</span></a></li>
+                                    <li><a href="#portfolio"><span data-i18n="nav.portfolio">Portofolio</span></a></li>
+                                    <li><a href="#experience"><span data-i18n="nav.experience">Pengalaman</span></a></li>
+                                    <li><a href="#contact"><span data-i18n="nav.contact">Kontak</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <div class="lang-switch d-flex align-items-center">
+                            <button type="button" class="lang-btn" data-lang="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">
+                                <img src="assets/img/flags/id.svg" alt="ID">
+                            </button>
+                            <button type="button" class="lang-btn" data-lang="en" title="English" aria-label="English">
+                                <img src="assets/img/flags/us.svg" alt="EN">
+                            </button>
+                        </div>
+                        <a href="#contact" class="theme-btn"><span data-i18n="nav.hire">Hire Me</span>
+                            <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-1 fix" id="home">
+        <div class="arrow-right-shape">
+            <img src="assets/img/hero/bg-1.png" alt="img">
+        </div>
+        <div class="arrow-shape float-bob-y">
+            <img src="assets/img/hero/angle-arrow.png" alt="img">
+        </div>
+        <div class="arrow-up">
+            <img src="assets/img/hero/arrow.png" alt="img">
+        </div>
+
+        <div class="hero-info">
+            <a href="https://wa.me/6285815247008" class="active" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:okhisahrulbarkah@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/okhisahrulbarkah" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-12">
+                    <div class="hero-content">
+                        <span class="text-2"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="hero.greeting">Hai!</span></span>
+                        <h1><span data-i18n="hero.iam">Saya</span> Okhi <span class="style-2">Sahrul Barkah</span> <br>
+                            <strong class="type-text"></strong></h1>
+
+                        <div class="hero-bottom">
+                            <p data-i18n="hero.desc">
+                                Fullstack Developer, UI/UX Designer, dan Graphic Designer. Terbiasa membangun solusi digital end-to-end: dari riset & desain antarmuka hingga implementasi frontend dan backend.
+                            </p>
+                            <div class="hero-btn-wrapper">
+                                <a href="assets/docs/CV_Okhi_Sahrul_Barkah.pdf" class="theme-btn" target="_blank" rel="noopener">
+                                    <span data-i18n="hero.btnCv">Unduh CV</span> <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" class="theme-btn" target="_blank" rel="noopener"
+                                    style="background: transparent; color: var(--header); border: 1.5px solid rgba(193,193,193,0.25);">
+                                    <span data-i18n="hero.btnPortfolio">Unduh Portofolio</span> <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="https://wa.me/6285815247008" class="video-btn" target="_blank" rel="noopener">
+                                    <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                    <span class="text" data-i18n="hero.btnWhatsapp">Chat WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section Start -->
+    <section class="marquee-section section-bg fix">
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>FULLSTACK DEVELOPMENT</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>UI/UX DESIGN</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>LARAVEL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>GRAPHIC DESIGN</h3>
+                    </div>
+                </div>
+
+                <!-- duplicate content for seamless scroll -->
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>FULLSTACK DEVELOPMENT</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>UI/UX DESIGN</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>LARAVEL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>GRAPHIC DESIGN</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about-section fix section-padding" id="about">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="about.kicker">Tentang Saya</span></span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="about.title">
+                        Membangun produk digital yang <br> rapi, cepat, dan mudah digunakan
+                    </h2>
+                </div>
+                <div class="content">
+                    <p data-i18n="about.desc">
+                        Lulusan Teknik Informatika Universitas Trunojoyo Madura dengan pengalaman pengalaman 3+ tahun di pengembangan dan desain digital. Menguasai HTML, CSS, JavaScript, PHP, React, Laravel, serta Figma/Photoshop/Adobe XD.
+                    </p>
+                    <a href="#portfolio" class="theme-btn"><span data-i18n="about.cta">Lihat Portofolio</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="about-wrapper-1">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item">
+                            <h2><span class="count">3</span>+</h2>
+                            <h3><span data-i18n="about.counter1">Tahun pengalaman</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item style-2">
+                            <h2><span class="count">25</span>+</h2>
+                            <h3><span data-i18n="about.counter2">Proyek terselesaikan</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item">
+                            <h2><span class="count">5</span></h2>
+                            <h3><span data-i18n="about.counter3">Pengalaman di 5 perusahaan</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Service Section Start -->
+    <section class="service-section service-1 section-padding section-bg fix" id="services">
+        <div class="random-shape float-bob-y">
+            <img src="assets/img/shape/random-shape.png" alt="img">
+        </div>
+        <div class="container">
+            <h2 class="sub-title" data-i18n="services.kicker">Layanan</h2>
+            <div class="section-title text-center">
+                <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="services.kicker">Layanan</span> <img src="assets/img/shape/star-2.png" alt="img"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="services.title">Apa yang bisa saya bantu</h2>
+            </div>
+            <div class="service-wrapper">
+                <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="head">
+                        <span>01</span>
+                        <h4><a href="#portfolio" data-i18n="services.s1.title">UI/UX Design</a></h4>
+                    </div>
+                    <div class="text">
+                        <p data-i18n="services.s1.desc">Riset ringan, wireframe, prototyping, dan design system agar produk mudah dipakai.</p>
+                    </div>
+                </div>
+
+                <div class="services-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="head">
+                        <span>02</span>
+                        <h4><a href="#portfolio" data-i18n="services.s2.title">Fullstack Web Development</a></h4>
+                    </div>
+                    <div class="text">
+                        <p data-i18n="services.s2.desc">Membangun web responsif + backend yang efisien (Laravel/PHP/React).</p>
+                    </div>
+                </div>
+
+                <div class="services-item wow fadeInUp" data-wow-delay=".6s">
+                    <div class="head">
+                        <span>03</span>
+                        <h4><a href="#portfolio" data-i18n="services.s3.title">Graphic Design & Branding</a></h4>
+                    </div>
+                    <div class="text">
+                        <p data-i18n="services.s3.desc">Logo, konten sosial media, dan aset visual yang konsisten dengan brand.</p>
+                    </div>
+                </div>
+
+                <div class="services-item mb-0 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="head">
+                        <span>04</span>
+                        <h4><a href="#portfolio" data-i18n="services.s4.title">WhatsApp Bot & Automation</a></h4>
+                    </div>
+                    <div class="text">
+                        <p data-i18n="services.s4.desc">Otomasi layanan via WhatsApp bot untuk pelayanan, edukasi, dan administrasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section Start -->
+    <section class="project-section section-padding fix" id="portfolio">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="portfolio.kicker">Portofolio</span></span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="portfolio.title">Beberapa proyek pilihan</h2>
+                </div>
+                <a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" class="theme-btn wow fadeInUp" data-wow-delay=".4s" target="_blank" rel="noopener">
+                    <span data-i18n="portfolio.viewAll">Buka Portofolio (PDF)</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="row g-4">
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".2s" data-href="https://mmakmur.com" data-target="_blank" role="link" tabindex="0" aria-label="Open PT. Multi Makmur">
+                            <div class="image">
+                                <img src="assets/img/projects/mmakmur-thumb.jpg" alt="PT. Multi Makmur">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Website</span>
+                                    <h4><a href="https://mmakmur.com" target="_blank" rel="noopener">PT. Multi Makmur</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://mmakmur.com" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".4s" data-href="https://skripsiplus.com" data-target="_blank" role="link" tabindex="0" aria-label="Open Skripsiplus">
+                            <div class="image">
+                                <img src="assets/img/projects/skripsiplus-thumb.jpg" alt="Skripsiplus">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Website &amp; Branding</span>
+                                    <h4><a href="https://skripsiplus.com" target="_blank" rel="noopener">Skripsiplus</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://skripsiplus.com" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".6s" data-href="https://bnnkabupatengresik.com/learning/" data-target="_blank" role="link" tabindex="0" aria-label="Open Proyek LMS BNNK Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-lms-thumb.jpg" alt="Proyek LMS BNNK Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">LMS</span>
+                                    <h4><a href="https://bnnkabupatengresik.com/learning/" target="_blank" rel="noopener">Proyek LMS BNNK Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://bnnkabupatengresik.com/learning/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".8s" data-href="https://bnnkabupatengresik.com/penyimpanan" data-target="_blank" role="link" tabindex="0" aria-label="Open Penyimpanan Cloud BNNK Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-cloud-thumb.jpg" alt="Penyimpanan Cloud BNNK Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Cloud</span>
+                                    <h4><a href="https://bnnkabupatengresik.com/penyimpanan" target="_blank" rel="noopener">Penyimpanan Cloud BNNK Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://bnnkabupatengresik.com/penyimpanan" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="1.0s" data-href="https://bnnkabupatengresik.com/form-dast/" data-target="_blank" role="link" tabindex="0" aria-label="Open Formulir DAST Online BNNK Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-dast-thumb.jpg" alt="Formulir DAST Online BNNK Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Form Online</span>
+                                    <h4><a href="https://bnnkabupatengresik.com/form-dast/" target="_blank" rel="noopener">Formulir DAST Online BNNK Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://bnnkabupatengresik.com/form-dast/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="1.2s" data-href="https://bnnkabupatengresik.com/form-assist/" data-target="_blank" role="link" tabindex="0" aria-label="Open Form Asesmen WHO - ASSIST V3.1 Online BNNK Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-assist-thumb.jpg" alt="Form Asesmen WHO - ASSIST V3.1 Online BNNK Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Form Online</span>
+                                    <h4><a href="https://bnnkabupatengresik.com/form-assist/" target="_blank" rel="noopener">Form Asesmen WHO - ASSIST V3.1 Online BNNK Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://bnnkabupatengresik.com/form-assist/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="1.4s" data-href="https://bnnkabupatengresik.com/" data-target="_blank" role="link" tabindex="0" aria-label="Open Website Pemetaan daerah kerawanan BNNK Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-map-thumb.jpg" alt="Website Pemetaan daerah kerawanan BNNK Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Private Access</span>
+                                    <h4><a href="https://bnnkabupatengresik.com/" target="_blank" rel="noopener">Website Pemetaan daerah kerawanan BNNK Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://bnnkabupatengresik.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="1.6s" data-href="https://kipankabupatengresik.com/" data-target="_blank" role="link" tabindex="0" aria-label="Open Website Kader Inti Pemuda Anti Narkoba Kabupaten Gresik">
+                            <div class="image">
+                                <img src="assets/img/projects/bnnk-kipan-thumb.jpg" alt="Website Kader Inti Pemuda Anti Narkoba Kabupaten Gresik">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Website</span>
+                                    <h4><a href="https://kipankabupatengresik.com/" target="_blank" rel="noopener">Website Kader Inti Pemuda Anti Narkoba Kabupaten Gresik</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://kipankabupatengresik.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="1.8s" data-href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" data-target="_blank" role="link" tabindex="0" aria-label="Open portfolio PDF">
+                            <div class="image">
+                                <img src="assets/img/projects/wireframe-thumb.jpg" alt="UI/UX Case Studies">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">UI/UX</span>
+                                    <h4><a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener">UI/UX Case Studies</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay="2.0s" data-href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" data-target="_blank" role="link" tabindex="0" aria-label="Open portfolio PDF">
+                            <div class="image">
+                                <img src="assets/img/projects/logo-1-thumb.jpg" alt="Logo Design">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span class="tag">Logo &amp; Visual</span>
+                                    <h4><a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener">Logo &amp; Visual Design</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Experience Section Start -->
+    <section class="experience-section section-padding section-bg fix" id="experience">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="exp.kicker">Pengalaman</span> <img src="assets/img/shape/star-2.png" alt="img"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="exp.title">Pengalaman kerja & organisasi</h2>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-lg-6">
+                    <div class="exp-col">
+                        <h3 class="exp-col-title" data-i18n="exp.workTitle">Pengalaman Kerja</h3>
+                        <div class="experience-wrapper">
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".2s">
+                                <div class="experience-items">
+                                    <span>2024</span>
+                                    <h4>IT Specialist</h4>
+                                    <h6>BNNK Gresik</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Membangun bot WhatsApp untuk pelayanan & penyuluhan anti-narkoba, dan berhasil diimplementasikan di layanan WhatsApp BNNK Gresik.</li>
+                                    <li>Membuat desain seragam BNNK Gresik.</li>
+                                    <li>Membuat konten untuk social media BNNK Gresik.</li>
+                                    <li>Melaksanakan penyuluhan tentang bahaya narkoba.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".3s">
+                                <div class="experience-items">
+                                    <span>2023</span>
+                                    <h4>Project Based Intern</h4>
+                                    <h6>PT. Nuri Gaya Citra</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>UI/UX Design: Re-design 3 fitur aplikasi Sf.Shop dan mendapatkan feedback positif dari user.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".4s">
+                                <div class="experience-items">
+                                    <span>2023</span>
+                                    <h4>UX Researcher (Virtual Internship)</h4>
+                                    <h6>Telkom Digital Amoeba</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Mengimplementasikan Design Thinking ke 3 aplikasi baru dan mendapatkan feedback positif.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".5s">
+                                <div class="experience-items">
+                                    <span>2023 - 2025</span>
+                                    <h4>Co-Founder & UI/UX Designer</h4>
+                                    <h6>PT. Nexvel Digital Group</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Menawarkan kerja sama dengan media partner nasional dan deal dengan 6 media partner nasional dalam 1 bulan.</li>
+                                    <li>Membuat konten untuk seluruh social media Nexvel Entertainment.</li>
+                                    <li>Merancang game baru untuk Nexvel Entertainment dan berhasil diimplementasikan.</li>
+                                    <li>Memasarkan game hingga mencapai 15.000 unduhan di Play Store.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="exp-col">
+                        <h3 class="exp-col-title" data-i18n="exp.orgTitle">Organisasi & Kepanitiaan</h3>
+                        <div class="experience-wrapper">
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".2s">
+                                <div class="experience-items">
+                                    <span>2024</span>
+                                    <h4>Sie PDD</h4>
+                                    <h6>KKN Universitas Trunojoyo Madura</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Bekerja sama dengan aparatur desa untuk merekap 5.500 data warga desa.</li>
+                                    <li>Digitalisasi pelayanan balai desa dengan website desa (77 menu pembuatan surat + menu lainnya).</li>
+                                    <li>Membangun dan mengimplementasikan bot WhatsApp untuk meningkatkan pelayanan balai desa.</li>
+                                    <li>Mengisi sosialisasi dan melatih 3 aparatur desa serta 4 perwakilan terkait penggunaan website & bot WhatsApp.</li>
+                                    <li>Mendokumentasikan dan mengedit seluruh social media kelompok KKN.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".3s">
+                                <div class="experience-items">
+                                    <span>2024</span>
+                                    <h4>Academic In Charge</h4>
+                                    <h6>Google Developer Student Club</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Product Development: Mengajar 1 kelas (±30 mahasiswa) dengan topik UI, UX, prototyping, digital marketing; tools: Figma & Google Ads.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".4s">
+                                <div class="experience-items">
+                                    <span>2023 - 2024</span>
+                                    <h4>Staff Kominfo</h4>
+                                    <h6>BEM-KM UTM</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Staff Komunikasi & Informasi.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".5s">
+                                <div class="experience-items">
+                                    <span>2023 - 2024</span>
+                                    <h4>Core Team Academic In Charge</h4>
+                                    <h6>Google Developer Student Club (GDSC UTM)</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Core team bidang Academic.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".6s">
+                                <div class="experience-items">
+                                    <span>2021 - 2024</span>
+                                    <h4>Staff Akademik</h4>
+                                    <h6>Creative Computer Club (CCC)</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Divisi akademik.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block wow fadeInUp" data-wow-delay=".7s">
+                                <div class="experience-items">
+                                    <span>2021 - 2024</span>
+                                    <h4>Anggota Muda</h4>
+                                    <h6>Information Technology Center (ITC)</h6>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Anggota muda.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-wrapper">
+                <div class="client-items">
+                    <div class="client-item">
+                        <div class="icon"><img src="assets/img/client/1.svg" alt="img"></div>
+                        <h4 class="number"><span class="count">90</span>% <span class="text">Figma</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon"><img src="assets/img/client/2.svg" alt="img"></div>
+                        <h4 class="number"><span class="count">80</span>% <span class="text">Laravel</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon"><img src="assets/img/client/3.svg" alt="img"></div>
+                        <h4 class="number"><span class="count">75</span>% <span class="text">React</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon"><img src="assets/img/client/4.svg" alt="img"></div>
+                        <h4 class="number"><span class="count">85</span>% <span class="text">Photoshop</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon"><img src="assets/img/client/5.svg" alt="img"></div>
+                        <h4 class="number"><span class="count">80</span>% <span class="text">Python</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Awards Section Start -->
+    <section class="awards-section section-padding fix" id="awards">
+        <div class="top-shape">
+            <img src="assets/img/shape/new-shape.png" alt="img">
+        </div>
+        <div class="star-shape float-bob-x">
+            <img src="assets/img/shape/star.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="awards-wrapper">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <div class="section-title mb-0">
+                            <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="awards.kicker">Penghargaan & Sertifikasi</span></span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="awards.title">Penghargaan & sertifikasi</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".3s" data-i18n="awards.desc" style="max-width: 520px; margin-top: 14px;">
+                                Daftar penghargaan dan sertifikasi yang saya peroleh dari kompetisi dan pelatihan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="awards-group">
+                            <h3 class="awards-group-title wow fadeInUp" data-wow-delay=".2s" data-i18n="awards.groupAwards">Penghargaan</h3>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".25s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/1.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Juara 1 Web Design</h4>
+                                        <span>UKM Triple-C • Penghargaan</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/5.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".3s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/2.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Juara 2 Lomba UI/UX Design</h4>
+                                        <span>Kompetisi UI/UX • Penghargaan</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/6.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".35s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/3.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Juara Sayembara Logo</h4>
+                                        <span>Program Studi Teknik Informatika, Universitas Trunojoyo Madura • Penghargaan</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/7.svg" alt="img"></div>
+                            </div>
+                        </div>
+
+                        <div class="awards-group mt-4">
+                            <h3 class="awards-group-title wow fadeInUp" data-wow-delay=".2s" data-i18n="awards.groupCerts">Sertifikasi</h3>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".25s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>100 Hours Web Development Bootcamp (Build 23 React Projects)</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".3s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Complete Figma Megacourse: UI/UX Design Beginner to Expert</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".35s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Master Digital Product Design: UX Research & UI Design</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".4s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Master Laravel 12 & PHP: From Beginner to Advanced</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".45s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>The Complete Full-Stack Web Development Bootcamp</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".5s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>PHP with MySQL: Build 5 PHP and MySQL Projects</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".55s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Real Android App Dev in 15 Hours | KotlinDevX Certificate 2024</h4>
+                                        <span>Udemy • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+
+                            <div class="awards-item wow fadeInUp" data-wow-delay=".6s">
+                                <div class="content">
+                                    <div class="icon"><img src="assets/img/icon/4.svg" alt="img"></div>
+                                    <div class="text">
+                                        <h4>Belajar Dasar Pemrograman Web</h4>
+                                        <span>Dicoding • Sertifikasi</span>
+                                    </div>
+                                </div>
+                                <div class="icon"><img src="assets/img/icon/8.svg" alt="img"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section Start -->
+    <section class="contact-section section-padding section-bg fix" id="contact">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img"> <span data-i18n="contact.kicker">Kontak</span> <img src="assets/img/shape/star-2.png" alt="img"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s" data-i18n="contact.title">Mari kolaborasi</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s" style="max-width: 760px; margin: 0 auto;" data-i18n="contact.desc">
+                    Butuh UI/UX, website, atau desain visual? Hubungi saya lewat WhatsApp, email, atau LinkedIn.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-lg-5">
+                    <div class="contact-card contact-card--info">
+                        <h4 class="mb-3" data-i18n="contact.quick">Kontak cepat</h4>
+
+                        <div class="contact-info-list">
+                            <a class="contact-info-item" href="https://maps.google.com/?q=Perumahan%20Golden%20Berry%20Menganti%20Gresik" target="_blank" rel="noopener">
+                                <span class="icon"><i class="fa-regular fa-map"></i></span>
+                                <span class="text">
+                                    <span class="label" data-i18n="contact.address">Alamat</span>
+                                    <span class="value">Perumahan Golden Berry, Menganti, Gresik, 61174</span>
+                                </span>
+                            </a>
+
+                            <a class="contact-info-item" href="mailto:okhisahrulbarkah@gmail.com">
+                                <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                                <span class="text">
+                                    <span class="label" data-i18n="contact.email">Email</span>
+                                    <span class="value">okhisahrulbarkah@gmail.com</span>
+                                </span>
+                            </a>
+
+                            <a class="contact-info-item" href="https://wa.me/6285815247008" target="_blank" rel="noopener">
+                                <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                <span class="text">
+                                    <span class="label" data-i18n="contact.phone">Telepon / WhatsApp</span>
+                                    <span class="value">+62 858-1524-7008</span>
+                                </span>
+                            </a>
+
+                            <a class="contact-info-item" href="https://linkedin.com/in/okhisahrulbarkah" target="_blank" rel="noopener">
+                                <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                                <span class="text">
+                                    <span class="label" data-i18n="contact.linkedin">LinkedIn</span>
+                                    <span class="value">linkedin.com/in/okhisahrulbarkah</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="contact-cta">
+                            <a class="theme-btn w-100" href="https://wa.me/6285815247008" target="_blank" rel="noopener">
+                                <span data-i18n="contact.ctaWhatsapp">Chat WhatsApp</span> <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a class="theme-btn w-100 contact-cta--outline" href="mailto:okhisahrulbarkah@gmail.com">
+                                <span data-i18n="contact.ctaEmail">Kirim Email</span> <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a class="theme-btn w-100 contact-cta--outline" href="https://linkedin.com/in/okhisahrulbarkah" target="_blank" rel="noopener">
+                                <span data-i18n="contact.ctaLinkedin">Buka LinkedIn</span> <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-card contact-card--form">
+                        <div class="contact-form-head">
+                            <h4 class="mb-1" data-i18n="contact.formTitle">Kirim pesan</h4>
+                            <p class="mb-0" data-i18n="contact.formSubtitle">Isi form di bawah ini, atau gunakan tombol WhatsApp untuk respon lebih cepat.</p>
+                        </div>
+
+                        <form class="contact-form-items" id="contact-form" action="contact.php" method="POST">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-clt form-clt-icon">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input type="text" name="name" id="name" required data-i18n-placeholder="form.name" placeholder="Nama">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-clt form-clt-icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input type="email" name="email" id="email" required data-i18n-placeholder="form.email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-clt form-clt-icon">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                        <textarea name="message" id="message" rows="5" required data-i18n-placeholder="form.message" placeholder="Pesan"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="theme-btn w-100">
+                                        <span data-i18n="form.send">Kirim Pesan</span> <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer Section Start -->
+    <footer class="footer-section fix fix">
+       <div class="bg-shape">
+        <img src="assets/img/footer/bg-shape.png" alt="img">
+       </div>
+       <div class="mycustom-marque">
+              <div class="scrolling-wrap style-2">
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+           </div>
+       </div>
+        <div class="container">
+            <div class="footer-widget-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-item">
+                            <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                                <img src="assets/img/logo/osb.svg" alt="img">
+                            </a>
+                            <ul class="footer-links wow fadeInUp" data-wow-delay=".5s">
+                                <li><a href="assets/docs/CV_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener">CV</a></li>
+                                <li><a href="assets/docs/Portfolio_Okhi_Sahrul_Barkah.pdf" target="_blank" rel="noopener">Portfolio</a></li>
+                            </ul>
+
+                            <ul class="social-icon wow fadeInUp" data-wow-delay=".3s">
+                                <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6285815247008" target="_blank" rel="noopener">WhatsApp</a></li>
+                                <li><i class="fal fa-envelope"></i> <a href="mailto:okhisahrulbarkah@gmail.com">Email</a></li>
+                                <li><i class="fa-brands fa-linkedin-in"></i> <a href="https://linkedin.com/in/okhisahrulbarkah" target="_blank" rel="noopener">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        © <span>Okhi Sahrul Barkah</span>
+                    </p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Typed Js >>-->
+    <script src="assets/js/typed.min.js"></script>
+    <!--<< i18n >>-->
+    <script src="assets/js/i18n.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/project-cards.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+</body>
+
+</html>

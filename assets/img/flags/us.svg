@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20">
+  <rect width="28" height="20" rx="3" fill="#FFFFFF"/>
+  <g>
+    <rect y="0" width="28" height="2" fill="#B22234"/>
+    <rect y="4" width="28" height="2" fill="#B22234"/>
+    <rect y="8" width="28" height="2" fill="#B22234"/>
+    <rect y="12" width="28" height="2" fill="#B22234"/>
+    <rect y="16" width="28" height="2" fill="#B22234"/>
+  </g>
+  <rect width="12" height="10" rx="2" fill="#3C3B6E"/>
+  <circle cx="3" cy="3" r="0.8" fill="#FFFFFF"/>
+  <circle cx="6" cy="3" r="0.8" fill="#FFFFFF"/>
+  <circle cx="9" cy="3" r="0.8" fill="#FFFFFF"/>
+  <circle cx="3" cy="6" r="0.8" fill="#FFFFFF"/>
+  <circle cx="6" cy="6" r="0.8" fill="#FFFFFF"/>
+  <circle cx="9" cy="6" r="0.8" fill="#FFFFFF"/>
+  <circle cx="3" cy="9" r="0.8" fill="#FFFFFF"/>
+  <circle cx="6" cy="9" r="0.8" fill="#FFFFFF"/>
+  <circle cx="9" cy="9" r="0.8" fill="#FFFFFF"/>
+  <rect width="28" height="20" rx="3" fill="none" stroke="rgba(255,255,255,0.35)"/>
+</svg>
